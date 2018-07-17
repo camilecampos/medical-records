@@ -1,4 +1,5 @@
 import DashboardLayout from "@/layout/dashboard/DashboardLayout.vue";
+import IndexLayout from "@/layout/dashboard/Index.vue";
 // GeneralViews
 import NotFound from "@/pages/NotFoundPage.vue";
 
@@ -14,7 +15,7 @@ import TableList from "@/pages/TableList.vue";
 const routes = [
   {
     path: "/",
-    component: DashboardLayout,
+    component: IndexLayout,
     redirect: "/dashboard",
     children: [
       {
