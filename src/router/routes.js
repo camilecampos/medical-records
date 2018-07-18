@@ -1,10 +1,15 @@
-import DashboardLayout from "@/layout/dashboard/DashboardLayout.vue";
+import DashboardLayout from "@/layout/dashboard/DashboardLayout.vue"; //index original do template
 import IndexLayout from "@/layout/dashboard/Index.vue";
+
 // GeneralViews
 import NotFound from "@/pages/NotFoundPage.vue";
 
-// Admin pages
-import Dashboard from "@/pages/Dashboard.vue";
+
+//Agenda do Médico
+import AgendaMedico from "@/pages/AgendaMedico.vue";
+
+// Admin pages -- original do template
+import Dashboard from "@/pages/UserProfile.vue";
 import UserProfile from "@/pages/UserProfile.vue";
 import Notifications from "@/pages/Notifications.vue";
 import Icons from "@/pages/Icons.vue";
@@ -18,6 +23,11 @@ const routes = [
     component: IndexLayout,
     redirect: "/dashboard",
     children: [
+      {
+        path: "agenda",
+        name: "agenda",
+        component: AgendaMedico
+      },
       {
         path: "dashboard",
         name: "dashboard",

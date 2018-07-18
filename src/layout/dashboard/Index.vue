@@ -20,11 +20,12 @@
 
 
         <div class="text-center">
-          <p-button type="success"
+          <!-- <p-button type="success"
                     round
                     @click.native.prevent="login">
             entrar
-          </p-button>
+          </p-button> -->
+          <router-link :to="{path:'/agenda'}" class="btn btn-success">entrar</router-link>
         </div>
         <div class="clearfix"></div>
       </form>
