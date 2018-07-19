@@ -19,51 +19,49 @@ import TableList from "@/pages/TableList.vue";
 
 const routes = [
   {
-    path: "/",
-    component: IndexLayout,
-    redirect: "/dashboard",
-    children: [
-      {
-        path: "agenda",
-        name: "agenda",
-        component: AgendaMedico
-      },
-      {
-        path: "dashboard",
-        name: "dashboard",
-        component: Dashboard
-      },
-      {
-        path: "stats",
-        name: "stats",
-        component: UserProfile
-      },
-      {
-        path: "notifications",
-        name: "notifications",
-        component: Notifications
-      },
-      {
-        path: "icons",
-        name: "icons",
-        component: Icons
-      },
-      {
-        path: "maps",
-        name: "maps",
-        component: Maps
-      },
-      {
-        path: "typography",
-        name: "typography",
-        component: Typography
-      },
-      {
-        path: "table-list",
-        name: "table-list",
-        component: TableList
-      }
-    ]
+    path: "",
+    name: "/dashboard",
+    component: IndexLayout
+  },
+  {
+    path: "agenda",
+    name: "agenda",
+    component: DashboardLayout
+  },
+  {
+    path: "dashboard",
+    name: "dashboard",
+    component: Dashboard
+  },
+  {
+    path: "stats",
+    name: "stats",
+    component: UserProfile
+  },
+  {
+    path: "notifications",
+    name: "notifications",
+    component: Notifications
+  },
+  {
+    path: "icons",
+    name: "icons",
+    component: Icons
+  },
+  {
+    path: "maps",
+    name: "maps",
+    component: Maps
+  },
+  {
+    path: "typography",
+    name: "typography",
+    component: Typography
+  },
+  {
+    path: "table-list",
+    name: "table-list",
+    component: TableList
   },
   { path: "*", component: NotFound }
 ];
